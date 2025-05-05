@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+    <TextView
+        android:id="@+id/textView_nombre"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_image" />
+
+    <TextView
+        android:id="@+id/textView_posicion"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="80dp"
+        android:text="posicion"
+        app:layout_constraintStart_toEndOf="@+id/textView_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_image" />
+
+    <TextView
+        android:id="@+id/textView_edad"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="156dp"
+        android:text="edad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_image" />
+
+    <TextView
+        android:id="@+id/textView_numero"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="156dp"
+        android:text="numero"
+        app:layout_constraintStart_toEndOf="@+id/textView_edad"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_image" />
+
+    <ImageView
+        android:id="@+id/imageView_image"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="212dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_edad"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
