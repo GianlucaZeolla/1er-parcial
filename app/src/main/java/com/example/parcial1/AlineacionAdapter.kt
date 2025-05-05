@@ -26,8 +26,8 @@ class AlineacionAdapter(val context: Context) : ListAdapter<Alineacion, Alineaci
         fun bind(alineacion: Alineacion) {
             id.text = "Nro: " + alineacion.id.toString()
             nombre.text = " " + alineacion.nombre
-            posicion.text = "posicion: " + alineacion.posicion.toString()
-            edad.text = "edad: " + alineacion.edad.toString()
+            posicion.text = "Posicion: " + alineacion.posicion.toString()
+            edad.text = "Edad: " + alineacion.edad.toString()
 
 
             Glide.with(context)
